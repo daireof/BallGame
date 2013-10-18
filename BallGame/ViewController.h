@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    IBOutlet UIButton *startbutton;
+    NSTimer * randomMain;
+    CGPoint pos;
+    IBOutlet UIImageView *player;
+    IBOutlet UIImageView *enemy;
+}
+
+-(IBAction)start;
 
 @end
